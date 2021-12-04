@@ -2,13 +2,13 @@ on:
   push:
     branches:
       - main
-
-    pull_request:
+  pull_request:
+    branches:
       - main
 
 jobs:
   test:
-    name: Test All Solutions
+    name: Run Tests
     runs-on: macos-latest
     strategy:
       matrix:
@@ -17,9 +17,9 @@ jobs:
           - "freelancer-rates"
 
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run Tests
+      - name: Run tests
         working-directory: ${{ matrix.dir }}
         run: swift test
