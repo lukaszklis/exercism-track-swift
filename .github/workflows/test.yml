@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - main
+
+    pull_request:
+      - main
+
+jobs:
+  test:
+    name: Test All Solutions
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        dir:
+          - "lasagna"
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Run Tests
+        working-directory: ${{ matrix.dir }}
+        run: swift test
