@@ -15,6 +15,7 @@ jobs:
         dir:
           - "lasagna"
           - "freelancer-rates"
+          - "vehicle-purchase"
 
     steps:
       - name: Checkout code
