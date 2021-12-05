@@ -16,6 +16,7 @@ jobs:
           - "lasagna"
           - "freelancer-rates"
           - "vehicle-purchase"
+          - "custom-signs"
 
     steps:
       - name: Checkout code
