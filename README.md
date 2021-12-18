@@ -1,4 +1,4 @@
-# Exercism Track Swift
+# Exercism Track Swift [![.github/workflows/test.yml](https://github.com/lukaszklis/exercism-track-swift/actions/workflows/test.yml/badge.svg)](https://github.com/lukaszklis/exercism-track-swift/actions/workflows/test.yml)
 
 Hello, I’m Łukasz. 👋
 
