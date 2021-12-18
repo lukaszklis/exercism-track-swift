@@ -17,6 +17,7 @@ jobs:
           - "freelancer-rates"
           - "vehicle-purchase"
           - "custom-signs"
+          - "secret-agent"
 
     steps:
       - name: Checkout code
