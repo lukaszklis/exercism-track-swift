@@ -19,6 +19,7 @@ jobs:
           - "custom-signs"
           - "secret-agent"
           - "magician-in-training"
+          - "santas-helper"
 
     steps:
       - name: Checkout code
