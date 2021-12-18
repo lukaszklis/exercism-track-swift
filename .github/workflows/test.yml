@@ -18,6 +18,7 @@ jobs:
           - "vehicle-purchase"
           - "custom-signs"
           - "secret-agent"
+          - "magician-in-training"
 
     steps:
       - name: Checkout code
