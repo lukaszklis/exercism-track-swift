@@ -21,6 +21,7 @@ jobs:
           - "pizza-slices"
           - "high-score-board"
           - "poetry-club"
+          - "master-mixologist"
 
     steps:
       - name: Checkout code
