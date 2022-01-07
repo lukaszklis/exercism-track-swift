@@ -1,27 +1,29 @@
 func newScoreBoard() -> [String: Int] {
-  fatalError("newScoreBoard not implemented - please add implementation here")
+  return [String: Int]()
 }
 
 func addPlayer(_ scores: inout [String: Int], _ name: String, _ score: Int = 0) {
-  fatalError("addPlayer not implemented - please add implementation here")
+  scores[name] = score
 }
 
 func removePlayer(_ scores: inout [String: Int], _ name: String) {
-  fatalError("newScoreBoard not implemented - please add implementation here")
+  scores.removeValue(forKey: name)
 }
 
 func resetScore(_ scores: inout [String: Int], _ name: String) {
-  fatalError("removePlayer not implemented - please add implementation here")
+  scores[name] = 0
 }
 
 func updateScore(_ scores: inout [String: Int], _ name: String, _ delta: Int) {
-  fatalError("updateScore not implemented - please add implementation here")
+  let currentValue = scores[name] ?? 0
+
+  scores.updateValue(currentValue + delta, forKey: name)
 }
 
 func orderByPlayers(_ scores: [String: Int]) -> [(String, Int)] {
-  fatalError("orderByPlayers not implemented - please add implementation here")
+  return scores.sorted(by: <)
 }
 
 func orderByScores(_ scores: [String: Int]) -> [(String, Int)] {
-  fatalError("orderByScores not implemented - please add implementation here")
+  return scores.sorted { $0.1 > $1.1 }
 }
