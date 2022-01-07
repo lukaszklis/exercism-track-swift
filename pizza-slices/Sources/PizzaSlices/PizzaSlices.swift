@@ -11,31 +11,15 @@ func biggestSlice(
   diameterA: String, slicesA: String,
   diameterB: String, slicesB: String
 ) -> String {
-  let diameterA = Double(diameterA)
-  let slicesA = Int(slicesA)
-  let diameterB = Double(diameterB)
-  let slicesB = Int(slicesB)
-  let areaA = sliceSize(diameter: diameterA, slices: slicesA)
-  let areaB = sliceSize(diameter: diameterB, slices: slicesB)
+  let areaA = sliceSize(diameter: Double(diameterA), slices: Int(slicesA)) ?? -1.0
+  let areaB = sliceSize(diameter: Double(diameterB), slices: Int(slicesB)) ?? -1.0
 
-  if let unwrappedAreaA = areaA {
-    if let unwrappedAreaB = areaB {
-      if unwrappedAreaA > unwrappedAreaB {
-        return "Slice A is bigger"
-      }
-    } else {
-      return "Slice A is bigger"
-    }
+  if areaA > areaB {
+    return "Slice A is bigger"
   }
 
-  if let unwrappedAreaB = areaB {
-    if let unwrappedAreaA = areaA {
-      if unwrappedAreaB > unwrappedAreaA {
-        return "Slice B is bigger"
-      }
-    } else {
-      return "Slice B is bigger"
-    }
+  if areaB > areaA {
+    return "Slice B is bigger"
   }
 
   return "Neither slice is bigger"
