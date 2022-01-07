@@ -20,6 +20,7 @@ jobs:
           - "lasagna-master"
           - "pizza-slices"
           - "high-score-board"
+          - "poetry-club"
 
     steps:
       - name: Checkout code
