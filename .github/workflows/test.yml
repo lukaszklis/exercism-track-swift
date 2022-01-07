@@ -19,6 +19,7 @@ jobs:
           - "santas-helper"
           - "lasagna-master"
           - "pizza-slices"
+          - "high-score-board"
 
     steps:
       - name: Checkout code
