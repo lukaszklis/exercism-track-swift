@@ -18,6 +18,7 @@ jobs:
           - "magician-in-training"
           - "santas-helper"
           - "lasagna-master"
+          - "pizza-slices"
 
     steps:
       - name: Checkout code
